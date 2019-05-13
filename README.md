@@ -2,12 +2,14 @@
 Artemis allows you to fetch data from your REST-API and provides Apollo-like Query & Mutation.
 
 ## Installation
-```
+
+```shell
 npm i -S 'artemis-react'
 ```
+
 ## Usage
 
-```
+```javascript
 import { ArtemisClient, ArtemisProvider } from 'artemis-react'
 
 const client = ArtemisClient()
@@ -21,7 +23,7 @@ ReactDOM.render(
 
 
 ### render prop
-```
+```javascript
 import { Query } from 'artemis-react'
 
 const GET_POSTS = async () => {
@@ -46,7 +48,8 @@ const Posts = () => (
 ```
 
 ### react hooks
-```
+
+```javascript
 import { useQuery } from 'artemis-react'
 
 const GET_POSTS = async () => {
@@ -59,9 +62,9 @@ const Posts = () => {
   if (error) return `Error! ${error.message}`
   return (
     <Table
-	    loading={loading}
-	    dataSource={data}
-	    columns={[...]}
+      loading={loading}
+      dataSource={data}
+      columns={[...]}
     />
   )
 }
