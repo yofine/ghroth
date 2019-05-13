@@ -33,16 +33,16 @@ const GET_POSTS = async () => {
 
 const Posts = () => (
   <Query query={GET_POSTS}>
-	    {({ loading, error, data })} => {
-	      if (error) return `Error! ${error.message}`
-	      return (
-	        <Table 
-	          loading={loading}
-	          dataSource={data}
-	          columns={[...]}
-	        />
-	      )
-	    }	    
+    {({ loading, error, data })} => {
+      if (error) return `Error! ${error.message}`
+      return (
+        <Table 
+          loading={loading}
+          dataSource={data}
+          columns={[...]}
+        />
+      )
+    }	    
   </Query>
 )
 ```
