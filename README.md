@@ -3,13 +3,13 @@ Artemis allows you to fetch data from your REST-API and provides Apollo-like Que
 
 ## Installation
 
-```shell
+```bash
 npm i -S 'artemis-react'
 ```
 
 ## Usage
 
-```javascript
+```js
 import { ArtemisClient, ArtemisProvider } from 'artemis-react'
 
 const client = ArtemisClient()
@@ -23,7 +23,7 @@ ReactDOM.render(
 
 
 ### render prop
-```javascript
+```js
 import { Query } from 'artemis-react'
 
 const GET_POSTS = async () => {
@@ -49,7 +49,7 @@ const Posts = () => (
 
 ### react hooks
 
-```javascript
+```js
 import { useQuery } from 'artemis-react'
 
 const GET_POSTS = async () => {
